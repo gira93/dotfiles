@@ -150,7 +150,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Lock i3
-bindsym $mod+Shift+l exec $HOME/.bin/lock.sh
+bindsym $mod+Shift+b exec $HOME/.bin/lock.sh
 
 # Disable window borders
 for_window [class=".*"] border pixel 0
