@@ -1,5 +1,5 @@
 # dotfiles
-Various Dotfiles from my debian install on a laptop
+Dotfiles for a complete i3 install (should be distro independent)
 
 ## Contents
 - i3 configuration files
@@ -7,23 +7,23 @@ Various Dotfiles from my debian install on a laptop
 - i3lock scrot lock script
 
 ## Requirements
-- i3-gaps
-- pulse-audio (pactl)
-- xbacklight
-- [light](https://github.com/haikarainen/light)
-- xinput
-- xset
-- compton
-- feh (loads ~/backgrounds/back.jpg)
-- wicd
+- i3 (with gaps)
+- [autotiling plugin](https://github.com/nwg-piotr/autotiling)
+- NetworkManager (nm-applet)
 - blueman
-
-#### For the custom i3lock script
-- scrot
-- imagemagick
-- i3lock
+- xfsettingsd
+- xfce4-power-manager
+- xfce4-clipman
+- picom
+- pywal (for custom colorscheme)
+- feh (if not using pywal)
+- pulse-audio (pactl)
+- dmenu
+- i3-dmenu-desktop
+- i3status
 
 ## Installation
 `i3` and `i3status` folder goes to `~/.config`.
-`xorg.conf.d` contains a special configuration for my Asus Laptop screen backlight to make it work with `xbacklight`.
-`lock.sh` can be copied to `~/.bin/`.
+
+## Notes
+The `older` folder contains older versions of scripts and xorg configs
