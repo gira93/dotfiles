@@ -21,9 +21,12 @@ Dotfiles for a complete i3 install (should be distro independent)
 - dmenu
 - i3-dmenu-desktop
 - i3status
+- imagemagick
+- scrot
 
 ## Installation
 `i3` and `i3status` folder goes to `~/.config`.
+`lock.sh` must be copied to `~/.local/bin/lock` for the lock screen to work properly
 
 ## Notes
-The `older` folder contains older versions of scripts and xorg configs
+The `older` folder contains older versions of xorg configs

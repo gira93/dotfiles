@@ -28,7 +28,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- ~/.local/bin/lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -53,13 +53,13 @@ exec --no-startup-id xfce4-power-manager
 exec --no-startup-id xfce4-clipman
 
 # Feh
-# exec --no-startup-id feh --bg-fill ~/Immagini/wallhaven-zygeko_1366x768.png
+exec --no-startup-id feh --bg-fill ~/Immagini/wallhaven-zygeko_1366x768.png
 
 # Picom
 exec --no-startup-id picom -f --backend glx --vsync
 
 # Wal
-exec --no-startup-id wal -R
+# exec --no-startup-id wal -R
 
 # Set colors from Xresources
 # Change 'color7' and 'color2' to whatever colors you want i3 to use 
