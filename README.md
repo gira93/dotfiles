@@ -4,7 +4,6 @@ Dotfiles for a complete i3 install (should be distro independent)
 ## Contents
 - i3 configuration files
 - i3status configuration files
-- i3lock scrot lock script
 
 ## Requirements
 - i3 (with gaps)
@@ -21,12 +20,11 @@ Dotfiles for a complete i3 install (should be distro independent)
 - dmenu
 - i3-dmenu-desktop
 - i3status
-- imagemagick
-- scrot
+- imagemagick (for pywal)
+- GNU Stow (for installing)
 
 ## Installation
-`i3` and `i3status` folder goes to `~/.config`.
-`lock.sh` must be copied to `~/.local/bin/lock` for the lock screen to work properly
+Clone into `~/.dotfiles` and then run GNU Stow to make symlinks, eg: `stow -nv i3` for dry-run (remove the "n" for the real install)
 
 ## Notes
-The `older` folder contains older versions of xorg configs
+The `older` folder contains older versions of xorg configs and an old lock script

@@ -53,13 +53,19 @@ exec --no-startup-id xfce4-power-manager
 exec --no-startup-id xfce4-clipman
 
 # Feh
-exec --no-startup-id feh --bg-fill ~/Immagini/wallhaven-zygeko_1366x768.png
+# exec --no-startup-id feh --bg-fill ~/Immagini/wallhaven-zygeko_1366x768.png
 
 # Picom
 exec --no-startup-id picom -f --backend glx --vsync
 
+# Xmodmap
+exec --no-startup-id xmodmap ~/.Xmodmap
+
+# Sxhkd
+# exec --no-startup-id sxhkd &
+
 # Wal
-# exec --no-startup-id wal -R
+exec --no-startup-id wal -R &
 
 # Set colors from Xresources
 # Change 'color7' and 'color2' to whatever colors you want i3 to use 
@@ -115,8 +121,11 @@ bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
-# lock screen
-bindsym $mod+Shift+a exec --no-startup-id loginctl lock-session
+# Lock screen
+# bindsym $mod+Shift+a exec --no-startup-id loginctl lock-session
+
+# Lock and turn off screen
+bindsym $mod+Shift+a exec --no-startup-id xset s activate
 
 # change focus
 bindsym $mod+h focus left
